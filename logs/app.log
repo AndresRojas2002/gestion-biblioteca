@@ -1,0 +1,36 @@
+18:20:32.000 [main] INFO  co.com.andresrojas.service.ServicioLibros - AGREGANDO LIBRO: Cien años de Soledad
+18:20:32.011 [main] INFO  co.com.andresrojas.service.ServicioLibros - BUSCANDO LIBRO CON ISBN: 978-0307474728
+18:20:32.011 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO ENCONTRADO: co.com.andresrojas.model.Libro@48c76607
+
+18:21:22.822 [main] INFO  co.com.andresrojas.service.ServicioLibros - AGREGANDO LIBRO: Cien años de Soledad
+18:21:22.829 [main] INFO  co.com.andresrojas.service.ServicioLibros - BUSCANDO LIBRO PARA ELIMINAR CON ISBN: 978-0307474728
+18:21:22.830 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO ELIMINADO: co.com.andresrojas.model.Libro@6b6776cb
+18:21:22.830 [main] INFO  co.com.andresrojas.service.ServicioLibros - BUSCANDO LIBRO CON ISBN: 978-0307474728
+18:21:22.830 [main] ERROR co.com.andresrojas.service.ServicioLibros - NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: 978-0307474728
+
+23:16:45.155 [main] INFO  co.com.andresrojas.service.ServicioLibros - AGREGANDO LIBRO: Cien años de Soledad
+23:16:45.174 [main] INFO  co.com.andresrojas.service.ServicioLibros - BUSCANDO LIBRO CON ISBN: 978-0307474729
+23:16:45.174 [main] ERROR co.com.andresrojas.service.ServicioLibros - NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: 978-0307474729
+23:28:58.771 [main] INFO  co.com.andresrojas.service.ServicioLibros - AGREGANDO LIBRO: Cien años de Soledad
+23:28:58.787 [main] INFO  co.com.andresrojas.service.ServicioLibros - BUSCANDO LIBRO PARA ELIMINAR CON ISBN: 978-0307474729
+23:28:58.787 [main] ERROR co.com.andresrojas.service.ServicioLibros - NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: 978-0307474729
+23:42:26.654 [main] INFO  co.com.andresrojas.service.ServicioLibros - AGREGANDO LIBRO: Cien años de Soledad
+23:42:26.661 [main] INFO  co.com.andresrojas.service.ServicioLibros - AGREGANDO LIBRO: El Quijote
+23:42:26.661 [main] INFO  co.com.andresrojas.service.ServicioLibros - OBTENIENDO LIBROS
+23:46:56.484 [main] INFO  co.com.andresrojas.service.ServicioLibros - AGREGANDO LIBRO: Cien años de Soledad
+23:46:56.498 [main] INFO  co.com.andresrojas.service.ServicioLibros - AGREGANDO LIBRO: El Quijote
+23:46:56.512 [main] INFO  co.com.andresrojas.service.ServicioLibros - OBTENIENDO LIBROS
+23:46:56.564 [main] INFO  co.com.andresrojas.service.ServicioLibros - AGREGANDO LIBRO: Cien años de Soledad
+23:46:56.570 [main] INFO  co.com.andresrojas.service.ServicioLibros - BUSCANDO LIBRO CON ISBN: 978-0307474729
+23:46:56.572 [main] ERROR co.com.andresrojas.service.ServicioLibros - NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: 978-0307474729
+23:46:56.602 [main] INFO  co.com.andresrojas.service.ServicioLibros - AGREGANDO LIBRO: Cien años de Soledad
+23:46:56.603 [main] INFO  co.com.andresrojas.service.ServicioLibros - BUSCANDO LIBRO CON ISBN: 978-0307474728
+23:46:56.603 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO ENCONTRADO: co.com.andresrojas.model.Libro@612e21b9
+23:46:56.614 [main] INFO  co.com.andresrojas.service.ServicioLibros - AGREGANDO LIBRO: Cien años de Soledad
+23:46:56.614 [main] INFO  co.com.andresrojas.service.ServicioLibros - BUSCANDO LIBRO PARA ELIMINAR CON ISBN: 978-0307474728
+23:46:56.614 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO ELIMINADO: co.com.andresrojas.model.Libro@67c5ac52
+23:46:56.614 [main] INFO  co.com.andresrojas.service.ServicioLibros - BUSCANDO LIBRO CON ISBN: 978-0307474728
+23:46:56.616 [main] ERROR co.com.andresrojas.service.ServicioLibros - NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: 978-0307474728
+23:46:56.625 [main] INFO  co.com.andresrojas.service.ServicioLibros - AGREGANDO LIBRO: Cien años de Soledad
+23:46:56.625 [main] INFO  co.com.andresrojas.service.ServicioLibros - BUSCANDO LIBRO PARA ELIMINAR CON ISBN: 978-0307474729
+23:46:56.625 [main] ERROR co.com.andresrojas.service.ServicioLibros - NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: 978-0307474729
