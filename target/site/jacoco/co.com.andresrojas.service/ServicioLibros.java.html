@@ -4,47 +4,60 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import co.com.andresrojas.exception.NotFoundException;
 import co.com.andresrojas.model.Libro;
 
 public class ServicioLibros {
 
+<span class="fc" id="L15">    private static final Logger LOG = LoggerFactory.getLogger(ServicioLibros.class);</span>
+
     private List&lt;Libro&gt; libros;
 
-<span class="fc" id="L16">    public ServicioLibros() {</span>
-<span class="fc" id="L17">        libros = new ArrayList&lt;&gt;();</span>
-<span class="fc" id="L18">    }</span>
+<span class="fc" id="L19">    public ServicioLibros() {</span>
+<span class="fc" id="L20">        libros = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L21">    }</span>
 
     public void agregarLibro(String titulo, String autor, String editorial, String isbn, LocalDate fechaPublicacion) {
-<span class="fc" id="L21">        libros.add(new Libro(titulo, autor, editorial, isbn, fechaPublicacion));</span>
-<span class="fc" id="L22">    }</span>
+<span class="fc" id="L24">        libros.add(new Libro(titulo, autor, editorial, isbn, fechaPublicacion));</span>
+<span class="fc" id="L25">        LOG.info(&quot;LIBRO AGREGADO: &quot; + titulo);</span>
+<span class="fc" id="L26">    }</span>
 
-    public List&lt;Libro&gt; obtenerLibros() {
-<span class="nc" id="L25">        return libros;</span>
+    public List&lt;Libro&gt; getLibros() {
+<span class="fc" id="L29">        LOG.debug(&quot;OBTENIENDO LIBROS&quot;);</span>
+<span class="fc" id="L30">        return libros;</span>
     }
 
-    public Libro obtenerLibro(String isbn) throws NotFoundException {
-<span class="pc bpc" id="L29" title="1 of 2 branches missed.">        for (Libro libro : libros) {</span>
-<span class="pc bpc" id="L30" title="1 of 2 branches missed.">            if (libro.getIsbn().equals(isbn)) {</span>
-<span class="fc" id="L31">                return libro;</span>
+    public Libro obtenerLibroIsbn(String isbn) throws NotFoundException {
+<span class="fc" id="L34">        LOG.debug(&quot;BUSCANDO LIBRO CON ISBN: &quot; + isbn);</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        for (Libro libro : libros) {</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">            if (libro.getIsbn().equals(isbn)) {</span>
+<span class="fc" id="L37">                LOG.info(&quot;LIBRO ENCONTRADO: &quot; + libro);</span>
+<span class="fc" id="L38">                return libro;</span>
+
             }
-<span class="nc" id="L33">        }</span>
-<span class="nc" id="L34">        throw new NotFoundException(&quot;NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: &quot; + isbn);</span>
-            
+
+        }
+<span class="fc" id="L43">        LOG.error(&quot;NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: &quot; + isbn);</span>
+<span class="fc" id="L44">        throw new NotFoundException(&quot;NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: &quot; + isbn + &quot;POR FAVOR VERIFICA TU ISBN&quot;);</span>
+
     }
 
     public void eliminarLibro(String isbn) throws NotFoundException {
-<span class="nc bnc" id="L39" title="All 2 branches missed.">        for (Libro libro : libros) {</span>
-<span class="nc bnc" id="L40" title="All 2 branches missed.">            if (libro.getIsbn().equals(isbn)) {</span>
-<span class="nc" id="L41">                libros.remove(libro);</span>
-<span class="nc" id="L42">                return;</span>
+<span class="fc" id="L49">        LOG.debug(&quot;BUSCANDO LIBRO PARA ELIMINAR CON ISBN: &quot; + isbn);</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">        for (Libro libro : libros) {</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">            if (libro.getIsbn().equals(isbn)) {</span>
+<span class="fc" id="L52">                libros.remove(libro);</span>
+<span class="fc" id="L53">                LOG.info(&quot;LIBRO ELIMINADO: &quot; + libro);</span>
+<span class="fc" id="L54">                return;</span>
             }
-<span class="nc" id="L44">        }</span>
-<span class="nc" id="L45">        throw new NotFoundException(&quot;NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: &quot; + isbn);</span>
+        }
+<span class="fc" id="L57">        LOG.error(&quot;NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: &quot; + isbn);</span>
+<span class="fc" id="L58">        throw new NotFoundException(&quot;NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: &quot; + isbn + &quot;POR FAVOR VERIFICA TU ISBN&quot;);</span>
+
     }
-    
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

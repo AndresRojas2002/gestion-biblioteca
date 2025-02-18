@@ -21,17 +21,17 @@ public class ServicioLibros {
     }
 
     public void agregarLibro(String titulo, String autor, String editorial, String isbn, LocalDate fechaPublicacion) {
-        LOG.info("AGREGANDO LIBRO: " + titulo);
         libros.add(new Libro(titulo, autor, editorial, isbn, fechaPublicacion));
+        LOG.info("LIBRO AGREGADO: " + titulo);
     }
 
-    public List<Libro> obtenerLibros() {
-        LOG.info("OBTENIENDO LIBROS");
+    public List<Libro> getLibros() {
+        LOG.debug("OBTENIENDO LIBROS");
         return libros;
     }
 
-    public Libro obtenerLibro(String isbn) throws NotFoundException {
-        LOG.info("BUSCANDO LIBRO CON ISBN: " + isbn);
+    public Libro obtenerLibroIsbn(String isbn) throws NotFoundException {
+        LOG.debug("BUSCANDO LIBRO CON ISBN: " + isbn);
         for (Libro libro : libros) {
             if (libro.getIsbn().equals(isbn)) {
                 LOG.info("LIBRO ENCONTRADO: " + libro);
@@ -41,12 +41,12 @@ public class ServicioLibros {
 
         }
         LOG.error("NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: " + isbn);
-        throw new NotFoundException("NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: " + isbn);
+        throw new NotFoundException("NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: " + isbn + "POR FAVOR VERIFICA TU ISBN");
 
     }
 
     public void eliminarLibro(String isbn) throws NotFoundException {
-        LOG.info("BUSCANDO LIBRO PARA ELIMINAR CON ISBN: " + isbn);
+        LOG.debug("BUSCANDO LIBRO PARA ELIMINAR CON ISBN: " + isbn);
         for (Libro libro : libros) {
             if (libro.getIsbn().equals(isbn)) {
                 libros.remove(libro);
@@ -55,7 +55,7 @@ public class ServicioLibros {
             }
         }
         LOG.error("NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: " + isbn);
-        throw new NotFoundException("NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: " + isbn);
+        throw new NotFoundException("NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: " + isbn + "POR FAVOR VERIFICA TU ISBN");
 
     }
 

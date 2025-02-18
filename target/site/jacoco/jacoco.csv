@@ -1,9 +1,9 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
 gestion-biblioteca,co.com.andresrojas.model,Prestamo,45,0,0,0,16,0,8,0,8,0
-gestion-biblioteca,co.com.andresrojas.model,EstadoPrestamo,15,0,0,0,2,0,1,0,1,0
-gestion-biblioteca,co.com.andresrojas.model,Usuario,49,0,0,0,18,0,9,0,9,0
+gestion-biblioteca,co.com.andresrojas.model,EstadoPrestamo,24,0,0,0,2,0,1,0,1,0
+gestion-biblioteca,co.com.andresrojas.model,Usuario,0,49,0,0,0,18,0,9,0,9
 gestion-biblioteca,co.com.andresrojas.model,Libro,0,33,0,0,0,12,0,6,0,6
-gestion-biblioteca,co.com.andresrojas.exception,NotFoundException,4,0,0,0,2,0,1,0,1,0
-gestion-biblioteca,co.com.andresrojas.service,ServicioLibros,39,39,6,2,9,8,6,3,2,3
-gestion-biblioteca,co.com.andresrojas.service,ServicioUsuario,3,0,0,0,1,0,1,0,1,0
+gestion-biblioteca,co.com.andresrojas.exception,NotFoundException,0,4,0,0,0,2,0,1,0,1
+gestion-biblioteca,co.com.andresrojas.service,ServicioLibros,0,115,0,8,0,24,0,10,0,6
+gestion-biblioteca,co.com.andresrojas.service,ServicioUsuario,0,161,0,8,0,38,0,13,0,9
 gestion-biblioteca,co.com.andresrojas.service,ServicioPrestamo,3,0,0,0,1,0,1,0,1,0
