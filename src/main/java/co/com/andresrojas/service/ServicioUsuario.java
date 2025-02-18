@@ -36,7 +36,7 @@ public class ServicioUsuario {
     }
 
     public Usuario obtenerUsuario(String id) throws NotFoundException {
-        LOG.debug("BUSCANDO USUARIO");
+        LOG.debug("BUSCANDO USUARIO CON NOMBRE: " + id);
         for (Usuario usuario : usuarios) {
             if (usuario.getId().equals(id)) {
                 LOG.info("USUARIO ENCONTRADO: " + usuario);
@@ -49,31 +49,35 @@ public class ServicioUsuario {
 
     }
 
-    public void eliminarUsuario(String nombre) throws NotFoundException {
-        LOG.debug("BUSCANDO USUARIO PARA ELIMINAR");
+    public void eliminarUsuario(String id) throws NotFoundException {
+        LOG.debug("BUSCANDO USUARIO PARA ELIMINAR;  ID : " + id);
         for (Usuario usuario : usuarios) {
-            if (usuario.getNombre().equals(nombre)) {
+            if (usuario.getId().equals(id)) {
                 usuarios.remove(usuario);
                 LOG.info("USUARIO ELIMINADO: " + usuario);
                 return;
             }
 
         }
-        LOG.error("NO SE ENCONTRO EL USUARIO PARA ELIMINAR CON NOMBRE: " + nombre);
+        LOG.error("NO SE ENCONTRO EL USUARIO CON EL ID : " + id);
 
         throw new NotFoundException(
-                "NO SE ENCONTRO EL USUARIO  BUSCADO CON NOMBRE: " + nombre + "POR FAVOR VERIFICA EL NOMBRE");
+                "NO SE ENCONTRO EL USUARIO CON EL ID: " + id + "POR FAVOR VERIFICA EL NOMBRE");
 
     }
 
     public void cambiarGmailUsuario(String id, String email) throws NotFoundException {
         var usuarios = obtenerUsuario(id);
+        LOG.debug("CAMBIANDO EL GMAIL");
         usuarios.setEmail(email);
+        LOG.info("GMAIL CAMBIADO EXITOSAMENTE: " + email);
     }
 
     public void cambiarTelefonoUsuario(String id, String telefono) throws NotFoundException {
         var usuarios = obtenerUsuario(id);
+        LOG.debug("CAMBIANDO EL TELEFONO");
         usuarios.setTelefono(telefono);
+        LOG.info("TELEFONO CAMBIADO EXITOSAMENTE: " + telefono);
 
     }
 }

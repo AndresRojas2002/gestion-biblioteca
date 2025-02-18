@@ -1,6 +1,5 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -75,6 +74,7 @@ public class ServicioLibrosTest {
         // GIVEN
         servicio.agregarLibro("Cien años de Soledad", "Gabriel Garcia Marquez", "Sudamericana", "978-0307474728",
                 LocalDate.of(1967, 5, 30));
+                
         var libro = "978-0307474729";
 
         // WHEN & THEN
