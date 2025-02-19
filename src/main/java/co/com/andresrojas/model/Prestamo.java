@@ -17,11 +17,11 @@ public class Prestamo {
     }
 
     public Prestamo(Libro libro, Usuario usuario) {
-        this(libro, usuario, LocalDate.now(), EstadoPrestamo.DISPONIBLE);
+        this(libro, usuario, LocalDate.now(), EstadoPrestamo.PRESTADO);
     }
 
     public Prestamo(Libro libro, Usuario usuario, LocalDate fechaPrestamo) {
-        this(libro, usuario, fechaPrestamo, EstadoPrestamo.DISPONIBLE);
+        this(libro, usuario, fechaPrestamo, EstadoPrestamo.PRESTADO);
     }
 
     public Libro getLibro() {
@@ -43,7 +43,5 @@ public class Prestamo {
     public void setEstado(EstadoPrestamo estado) {
         this.estado = estado;
     }
-
-    
 
 }

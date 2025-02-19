@@ -209,3 +209,89 @@
 16:06:55.401 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@60783105
 16:06:55.410 [main] INFO  co.com.andresrojas.service.ServicioUsuario - TELEFONO CAMBIADO EXITOSAMENTE: 3209134394
 16:06:55.410 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@60783105
+
+23:37:08.730 [main] ERROR co.com.andresrojas.service.ServicioPrestamo - NO EXISTE UN PRESTAMO DEL LIBRO: 978-0307474728 PARA EL USUARIO: 1
+23:37:09.089 [main] ERROR co.com.andresrojas.service.ServicioPrestamo - NO EXISTE UN PRESTAMO DEL LIBRO: 978-0307474728 PARA EL USUARIO: 1
+23:52:38.089 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO AGREGADO: Cien años de Soledad
+23:52:38.104 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO AGREGADO: El Quijote
+23:52:38.265 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO AGREGADO: Cien años de Soledad
+23:52:38.270 [main] ERROR co.com.andresrojas.service.ServicioLibros - NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: 978-0307474729
+23:52:38.285 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO AGREGADO: Cien años de Soledad
+23:52:38.285 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO ENCONTRADO: co.com.andresrojas.model.Libro@5300cac
+23:52:38.375 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO AGREGADO: Cien años de Soledad
+23:52:38.384 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO ELIMINADO: co.com.andresrojas.model.Libro@73c9e8e8
+23:52:38.384 [main] ERROR co.com.andresrojas.service.ServicioLibros - NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: 978-0307474728
+23:52:38.420 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO AGREGADO: Cien años de Soledad
+23:52:38.422 [main] ERROR co.com.andresrojas.service.ServicioLibros - NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: 978-0307474729
+23:52:53.400 [main] INFO  co.com.andresrojas.service.ServicioPrestamo - PRESTAMO AGREGADO CON EXITO: co.com.andresrojas.model.Prestamo@68df8c6
+23:52:53.401 [main] INFO  co.com.andresrojas.service.ServicioPrestamo - DEVOLVIENDO PRESTAMO: co.com.andresrojas.model.Prestamo@7c206b14
+23:52:53.433 [main] INFO  co.com.andresrojas.service.ServicioPrestamo - PRESTAMO AGREGADO CON EXITO: co.com.andresrojas.model.Prestamo@4a944af9
+23:52:53.436 [main] ERROR co.com.andresrojas.service.ServicioPrestamo - EL LIBRO Cien años de Soledad CON ISBN: 978-0307474728 YA ESTA PRESTADO
+23:52:53.764 [main] INFO  co.com.andresrojas.service.ServicioPrestamo - PRESTAMO AGREGADO CON EXITO: co.com.andresrojas.model.Prestamo@2e0fdc83
+23:52:53.859 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+23:52:53.860 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@432a6a69
+23:52:53.946 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+23:52:53.946 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@3fe98084
+23:52:53.957 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+23:52:53.958 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ELIMINADO: co.com.andresrojas.model.Usuario@151a6598
+23:52:53.959 [main] ERROR co.com.andresrojas.service.ServicioUsuario - NO SE ENCONTRO EL USUARIO BUSCADO CON EL NOMBRE: 1
+23:52:53.973 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+23:52:53.974 [main] ERROR co.com.andresrojas.service.ServicioUsuario - NO SE ENCONTRO EL USUARIO BUSCADO CON EL NOMBRE: 2
+23:52:53.989 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+23:52:53.995 [main] ERROR co.com.andresrojas.service.ServicioUsuario - NO SE ENCONTRO EL USUARIO CON EL ID : 2
+23:52:54.005 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+23:52:54.006 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@47c81e89
+23:52:54.006 [main] INFO  co.com.andresrojas.service.ServicioUsuario - GMAIL CAMBIADO EXITOSAMENTE: andresrojas@gmail.com
+23:52:54.006 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@47c81e89
+23:52:54.076 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+23:52:54.076 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Astrid Acevedo
+23:52:54.076 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Luis Rojas
+23:52:54.084 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+23:52:54.084 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@12548f9a
+23:52:54.085 [main] INFO  co.com.andresrojas.service.ServicioUsuario - TELEFONO CAMBIADO EXITOSAMENTE: 3209134394
+23:52:54.086 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@12548f9a
+23:53:10.660 [main] INFO  co.com.andresrojas.service.ServicioPrestamo - PRESTAMO AGREGADO CON EXITO: co.com.andresrojas.model.Prestamo@25b5c5e3
+23:53:10.675 [main] INFO  co.com.andresrojas.service.ServicioPrestamo - DEVOLVIENDO PRESTAMO: co.com.andresrojas.model.Prestamo@6a9b0a6f
+23:53:10.697 [main] INFO  co.com.andresrojas.service.ServicioPrestamo - PRESTAMO AGREGADO CON EXITO: co.com.andresrojas.model.Prestamo@2c6ee758
+23:53:10.709 [main] ERROR co.com.andresrojas.service.ServicioPrestamo - EL LIBRO Cien años de Soledad CON ISBN: 978-0307474728 YA ESTA PRESTADO
+23:53:10.730 [main] INFO  co.com.andresrojas.service.ServicioPrestamo - PRESTAMO AGREGADO CON EXITO: co.com.andresrojas.model.Prestamo@2116b68b
+00:06:45.248 [main] ERROR co.com.andresrojas.service.ServicioPrestamo - NO SE ENCONTRO UN PRESTAMO DEL LIBRO: 978-0307474728 PARA EL USUARIO: 1
+00:08:38.990 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO AGREGADO: Cien años de Soledad
+00:08:39.001 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO AGREGADO: El Quijote
+00:08:39.111 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO AGREGADO: Cien años de Soledad
+00:08:39.117 [main] ERROR co.com.andresrojas.service.ServicioLibros - NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: 978-0307474729
+00:08:39.127 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO AGREGADO: Cien años de Soledad
+00:08:39.129 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO ENCONTRADO: co.com.andresrojas.model.Libro@5300cac
+00:08:39.137 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO AGREGADO: Cien años de Soledad
+00:08:39.137 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO ELIMINADO: co.com.andresrojas.model.Libro@73c9e8e8
+00:08:39.137 [main] ERROR co.com.andresrojas.service.ServicioLibros - NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: 978-0307474728
+00:08:39.145 [main] INFO  co.com.andresrojas.service.ServicioLibros - LIBRO AGREGADO: Cien años de Soledad
+00:08:39.147 [main] ERROR co.com.andresrojas.service.ServicioLibros - NO SE ENCONTRO EL LIBRO BUSCADO CON ISBN: 978-0307474729
+00:08:44.805 [main] ERROR co.com.andresrojas.service.ServicioPrestamo - NO SE ENCONTRO UN PRESTAMO DEL LIBRO: 978-0307474728 PARA EL USUARIO: 1
+00:08:45.272 [main] INFO  co.com.andresrojas.service.ServicioPrestamo - PRESTAMO AGREGADO CON EXITO: co.com.andresrojas.model.Prestamo@6b0325d0
+00:08:45.273 [main] INFO  co.com.andresrojas.service.ServicioPrestamo - DEVOLVIENDO PRESTAMO: co.com.andresrojas.model.Prestamo@70439c3
+00:08:45.290 [main] INFO  co.com.andresrojas.service.ServicioPrestamo - PRESTAMO AGREGADO CON EXITO: co.com.andresrojas.model.Prestamo@77204651
+00:08:45.294 [main] ERROR co.com.andresrojas.service.ServicioPrestamo - EL LIBRO Cien años de Soledad CON ISBN: 978-0307474728 YA ESTA PRESTADO
+00:08:45.307 [main] INFO  co.com.andresrojas.service.ServicioPrestamo - PRESTAMO AGREGADO CON EXITO: co.com.andresrojas.model.Prestamo@e994ca
+00:08:45.346 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+00:08:45.347 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@7fb44737
+00:08:45.525 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+00:08:45.525 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@5daad59a
+00:08:45.537 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+00:08:45.538 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ELIMINADO: co.com.andresrojas.model.Usuario@58f50dd0
+00:08:45.538 [main] ERROR co.com.andresrojas.service.ServicioUsuario - NO SE ENCONTRO EL USUARIO BUSCADO CON EL NOMBRE: 1
+00:08:45.546 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+00:08:45.547 [main] ERROR co.com.andresrojas.service.ServicioUsuario - NO SE ENCONTRO EL USUARIO BUSCADO CON EL NOMBRE: 2
+00:08:45.554 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+00:08:45.556 [main] ERROR co.com.andresrojas.service.ServicioUsuario - NO SE ENCONTRO EL USUARIO CON EL ID : 2
+00:08:45.573 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+00:08:45.574 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@350342e0
+00:08:45.574 [main] INFO  co.com.andresrojas.service.ServicioUsuario - GMAIL CAMBIADO EXITOSAMENTE: andresrojas@gmail.com
+00:08:45.575 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@350342e0
+00:08:45.580 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+00:08:45.581 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Astrid Acevedo
+00:08:45.581 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Luis Rojas
+00:08:45.588 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO AGREGADO : Andres Rojas
+00:08:45.588 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@6cc56b32
+00:08:45.589 [main] INFO  co.com.andresrojas.service.ServicioUsuario - TELEFONO CAMBIADO EXITOSAMENTE: 3209134394
+00:08:45.589 [main] INFO  co.com.andresrojas.service.ServicioUsuario - USUARIO ENCONTRADO: co.com.andresrojas.model.Usuario@6cc56b32
