@@ -9,27 +9,27 @@ public class Prestamo {
     private LocalDate fechaPrestamo;
     private EstadoPrestamo estado;
 
-<span class="nc" id="L12">    public Prestamo(Libro libro, Usuario usuario, LocalDate fechaPrestamo, EstadoPrestamo estado) {</span>
-<span class="nc" id="L13">        this.libro = libro;</span>
-<span class="nc" id="L14">        this.usuario = usuario;</span>
-<span class="nc" id="L15">        this.fechaPrestamo = fechaPrestamo;</span>
-<span class="nc" id="L16">        this.estado = estado;</span>
-<span class="nc" id="L17">    }</span>
+<span class="fc" id="L12">    public Prestamo(Libro libro, Usuario usuario, LocalDate fechaPrestamo, EstadoPrestamo estado) {</span>
+<span class="fc" id="L13">        this.libro = libro;</span>
+<span class="fc" id="L14">        this.usuario = usuario;</span>
+<span class="fc" id="L15">        this.fechaPrestamo = fechaPrestamo;</span>
+<span class="fc" id="L16">        this.estado = estado;</span>
+<span class="fc" id="L17">    }</span>
 
     public Prestamo(Libro libro, Usuario usuario) {
-<span class="nc" id="L20">        this(libro, usuario, LocalDate.now(), EstadoPrestamo.DISPONIBLE);</span>
-<span class="nc" id="L21">    }</span>
+<span class="fc" id="L20">        this(libro, usuario, LocalDate.now(), EstadoPrestamo.PRESTADO);</span>
+<span class="fc" id="L21">    }</span>
 
     public Prestamo(Libro libro, Usuario usuario, LocalDate fechaPrestamo) {
-<span class="nc" id="L24">        this(libro, usuario, fechaPrestamo, EstadoPrestamo.DISPONIBLE);</span>
+<span class="nc" id="L24">        this(libro, usuario, fechaPrestamo, EstadoPrestamo.PRESTADO);</span>
 <span class="nc" id="L25">    }</span>
 
     public Libro getLibro() {
-<span class="nc" id="L28">        return libro;</span>
+<span class="fc" id="L28">        return libro;</span>
     }
 
     public Usuario getUsuario() {
-<span class="nc" id="L32">        return usuario;</span>
+<span class="fc" id="L32">        return usuario;</span>
     }
 
     public LocalDate getFechaPrestamo() {
@@ -37,14 +37,12 @@ public class Prestamo {
     }
 
     public EstadoPrestamo getEstado() {
-<span class="nc" id="L40">        return estado;</span>
+<span class="fc" id="L40">        return estado;</span>
     }
 
     public void setEstado(EstadoPrestamo estado) {
-<span class="nc" id="L44">        this.estado = estado;</span>
-<span class="nc" id="L45">    }</span>
-
-    
+<span class="fc" id="L44">        this.estado = estado;</span>
+<span class="fc" id="L45">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
